@@ -1,0 +1,151 @@
+.signup{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#error ,#err{
+    color: red;  
+    font-size:14px;
+    margin:5% 0 0 38%;   
+    font-weight: bold;
+    letter-spacing: 4%;
+}
+
+
+.signup_1,
+.signup_2 {
+    width: 50%;
+    height: 100%;
+}
+
+.signup_1 {
+    background-image: url('../../assets/logback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup_1 #log_img {
+    width: 70%;
+    margin: 25% 0 0 10%;
+}
+
+.signup-content {
+    width: 50%;
+    margin: 8%;
+}
+
+.signup-content-head{
+    margin-left: 35%;
+    margin-bottom: 7%;
+    font-weight: lighter;
+}
+
+
+.input-container {
+    border-bottom: 1px solid #908888;
+    width: 70%;
+    padding: 10px;
+    margin-left: 12%;
+    margin-bottom: 5%;
+}
+
+.solid-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background-color: transparent;
+    padding:1%;
+}
+
+.forgotpass{
+    margin-left: 42%;
+    font-size: 20px;
+    margin-bottom: 8%;
+    font-weight: lighter;
+}
+
+.signup-text button:hover{
+    color: black;
+    background-color: white;
+}
+
+.signup-btn{
+    padding: 2% 4%;
+    background-color:#a6bfc3;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10%;
+    margin-left: 45%;
+}
+
+.signup-btn:hover{
+    background-color:#5383aa;
+}
+
+.signup-password-toggle{
+    position: absolute;
+    right: 230px;
+    top: 58%;
+    cursor: pointer; 
+}
+
+.back-arrow{
+    cursor: pointer;
+}
+
+#errorTag{
+    margin:0 0 5% 40%;
+    color: red;
+    font-weight: 500;
+}
+
+.want{
+    margin:10% 0 0 35%;
+}
+
+@media (max-width: 480px) {
+    .signup_1 {
+        width: 30%;
+    }
+
+    .signup_2 {
+        width: 70%;
+    }
+
+    .signup_1 #log_img {
+        width: 80%;
+        margin: 225% 0 0 10%;
+    }
+
+    .signup_2 p {
+        margin: 10% 0 0 20%;
+    }
+    
+    #signupbox {
+        width: 65%;
+        height: 250px;
+        margin: 40% 0 0 10%;
+    }
+
+    #signupbox label {
+        font-size: small;
+    }
+
+    #signupbox input {
+        margin: 5% 0 10% 5%;
+        width: 55%;
+        height: 30px;
+        text-indent: 8px;
+        position: relative;
+    }
+
+    .btnSubmit{
+        margin: 5% 30%;
+    }
+}

@@ -1,0 +1,116 @@
+.login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.login_1,
+.login_2 {
+    width: 50%;
+    height: 100%;
+}
+
+.login_1 {
+    background-image: url('../../assets/logback.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_1 #log_img {
+    width: 70%;
+    margin: 25% 0 0 10%;
+}
+
+.login-content {
+    width: 50%;
+    margin: 8%;
+}
+
+.login-content-head{
+    margin: 10% 0 7% 35%;
+    font-weight: lighter;
+}
+
+
+
+.forgotpass{
+    margin-left: 42%;
+    font-size: 20px;
+    margin-bottom: 8%;
+    font-weight: lighter;
+}
+
+.login-text button:hover{
+    color: black;
+    background-color: white;
+}
+
+.login-btn{
+    padding: 2% 4%;
+    background-color:#a6bfc3;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10%;
+    margin-left: 45%;
+}
+
+.login-btn:hover{
+    background-color:#5383aa;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 230px;
+    top: 54%;
+    cursor: pointer; 
+}
+
+.back-arrow{
+    cursor: pointer;
+}
+
+
+@media (max-width: 480px) {
+    .login_1 {
+        width: 30%;
+    }
+
+    .login_2 {
+        width: 70%;
+    }
+
+    .login_1 #log_img {
+        width: 80%;
+        margin: 225% 0 0 10%;
+    }
+
+    .login_2 p {
+        margin: 10% 0 0 20%;
+    }
+    
+    #loginbox {
+        width: 65%;
+        height: 250px;
+        margin: 40% 0 0 10%;
+    }
+
+    #loginbox label {
+        font-size: small;
+    }
+
+    #loginbox input {
+        margin: 5% 0 10% 5%;
+        width: 55%;
+        height: 30px;
+        text-indent: 8px;
+        position: relative;
+    }
+
+    .btnSubmit{
+        margin: 5% 30%;
+    }
+}

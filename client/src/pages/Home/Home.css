@@ -1,0 +1,92 @@
+.home {
+    font-family: "Work Sans", sans-serif;
+}
+
+.home-navbar {
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.home-navbar .logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 86% 0 4%;
+
+}
+
+.logout-icon {
+
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: black;
+}
+
+.home-welcome {
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    background-color: rgb(188, 233, 245);
+    position: relative;
+    border-bottom: 1px solid grey;
+}
+
+.home-welcome-box {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+
+.home-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-tab {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.home-tab.active {
+    background-color: #82d6e3;
+    color: white;
+}
+
+.home-content {
+    padding: 20px;
+}
+
+@media (max-width: 480px) {
+    .home-navbar {
+        padding: 5% 2%;
+    }
+
+    .home-navbar .logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-tabs {
+        flex-direction: column;
+    }
+
+    .home-tab {
+        margin-bottom: 10px;
+    }
+
+    .home-content {
+        padding: 10px;
+    }
+}

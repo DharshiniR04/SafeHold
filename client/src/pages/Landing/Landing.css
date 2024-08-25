@@ -1,0 +1,41 @@
+.landing{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #cce6e7 45%, #9bd7d8 65%);
+    perspective: 1000px; /* Adds perspective for 3D effect */
+}
+
+#card {
+    width: 30%;
+    height: 80%;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the effect */
+}
+
+#card:hover {
+    transform: rotateY(20deg) rotateX(10deg) scale(1.05); /* 3D effect on hover */
+}
+
+.landing_btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color:rgb(62, 135, 136);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.landing_btn:hover {
+    background-color:rgba(81,182,190,255);
+}
+
+@media (max-width: 480px) {
+    #card {
+        width: 65%;
+        height: 55%;
+    }
+}
