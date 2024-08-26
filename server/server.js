@@ -10,7 +10,11 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+     origin:["https://safe-hold.vercel.app/"],
+     methods:["GET","POST","PATCH","DELETE","PUT"],
+     credentials:true
+}));
 app.use(express.json());
 
 app.get("/",async(req,res)=>{
