@@ -79,7 +79,7 @@
         width: 30%;
     }
 
-    .login_2 {
+    .login-content{
         width: 70%;
     }
 
@@ -88,8 +88,13 @@
         margin: 225% 0 0 10%;
     }
 
-    .login_2 p {
+    .login-content p {
         margin: 10% 0 0 20%;
+    }
+    
+    .password-toggle {
+        right: 80px;
+        top: 54%;
     }
     
     #loginbox {

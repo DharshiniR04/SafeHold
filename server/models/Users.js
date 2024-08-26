@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema({
     },
     amount:{
         type:Number,
-        default:100
+        default:1000
     },
     createdAt: {
         type: Date,

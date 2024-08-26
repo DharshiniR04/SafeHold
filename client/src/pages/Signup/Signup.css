@@ -91,7 +91,7 @@
 .signup-password-toggle{
     position: absolute;
     right: 230px;
-    top: 58%;
+    top: 56%;
     cursor: pointer; 
 }
 
@@ -114,7 +114,7 @@
         width: 30%;
     }
 
-    .signup_2 {
+    .signup-content {
         width: 70%;
     }
 
@@ -123,7 +123,7 @@
         margin: 225% 0 0 10%;
     }
 
-    .signup_2 p {
+    .signup-content p {
         margin: 10% 0 0 20%;
     }
     
@@ -143,6 +143,11 @@
         height: 30px;
         text-indent: 8px;
         position: relative;
+    }
+
+    .signup-password-toggle{
+        right: 80px;
+        top: 58%;
     }
 
     .btnSubmit{

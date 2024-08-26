@@ -1,0 +1,49 @@
+.history {
+    padding: 20px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.history-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-table th, .history-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.history-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.history-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.history-table .positive {
+    color: green;
+}
+
+.history-table .negative {
+    color: red;
+}
+
+@media (max-width: 480px) {
+    .history-table th, .history-table td {
+        padding: 8px;
+    }
+
+    .history-title {
+        font-size: 1.2rem;
+    }
+}

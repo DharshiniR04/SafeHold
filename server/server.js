@@ -3,6 +3,7 @@ const dotenv = require('dotenv');
 const cors=require('cors');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
+const transactionRoutes=require('./routes/transactionRoutes');
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.get("/",async(req,res)=>{
 })
 
 app.use('/api/auth', authRoutes);
+app.use('/api/tran',transactionRoutes);
 
 const PORT = process.env.PORT || 5000;
 
