@@ -1,5 +1,5 @@
 const User = require('../models/Users');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const {generateUsername, generatePrivatekey}=require('../utils/userService');
 
 
