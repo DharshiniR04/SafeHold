@@ -10,7 +10,7 @@ function Transaction() {
 
     const updateUserDetail=async(email)=>{
             try{
-               const response=await axios.post("http://localhost:5000/api/auth/userdetail",{email:email});
+               const response=await axios.post("https://safe-hold-server.vercel.app/api/auth/userdetail",{email:email});
                setUserDetail(response.data);
             }
             catch(err){
@@ -27,7 +27,7 @@ function Transaction() {
             amount: event.target.elements.amount.value
         }
         try {
-            const response = await axios.post("http://localhost:5000/api/tran/transaction", { email: userDetail.email, from: userDetail.name, to: data.recipient, amount: data.amount });
+            const response = await axios.post("https://safe-hold-server.vercel.app/api/tran/transaction", { email: userDetail.email, from: userDetail.name, to: data.recipient, amount: data.amount });
             console.log(response);
             if (response.data.message === "Recipient does not exist") {
                 errTag.textContent = "Recipient does not exist";
