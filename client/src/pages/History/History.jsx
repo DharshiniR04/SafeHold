@@ -45,12 +45,12 @@ function History() {
                         </tr>
                     </thead>
                     <tbody>
-                        {transaction.map((transaction) => (
-                            <tr key={transaction.id}>
+                        {transaction.map((transaction,key) => (
+                            <tr key={key}>
                                 <td>{new Date(transaction.date).toLocaleDateString()}</td>
                                 <td>{transaction.from}</td>
                                 <td>{transaction.to}</td>
-                                <td className={(transaction.from!==userDetail.name) ? 'negative' : 'positive'}>
+                                <td className={(transaction.from===userDetail.name) ? 'negative' : 'positive'}>
                                     {transaction.amount}
                                 </td>
                             </tr>

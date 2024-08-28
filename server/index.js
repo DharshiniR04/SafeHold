@@ -3,6 +3,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
+const transactionRoutes=require('./routes/transactionRoutes');
 
 dotenv.config();
 connectDB();
@@ -16,6 +17,7 @@ app.get("/", (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/tran',transactionRoutes);
 
 app.listen(process.env.PORT,()=>{console.log("Running on port 5000")});
 
