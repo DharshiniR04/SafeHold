@@ -32,7 +32,7 @@ function Signup() {
         }
 
         try {
-            const response = await axios.post("https://safe-hold-server.vercel.app/signup", { name: data.name, email: data.email, password: data.password });
+            const response = await axios.post("https://safe-hold-server.vercel.app/api/auth/signup", { name: data.name, email: data.email, password: data.password });
             if (response.data.message === "User already exists") {
                 errorTag.textContent = "User already exists";
             }
