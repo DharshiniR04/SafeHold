@@ -12,7 +12,7 @@ function History() {
     useEffect(() => {
         const checkTransaction = async () => {
             try {
-                const response = await axios.post("http://localhost:5000/api/tran/gettransaction", { email: userDetail.email,to:userDetail.username_publickey });
+                const response = await axios.post("https://safe-hold-server.vercel.app/api/tran/gettransaction", { email: userDetail.email,to:userDetail.username_publickey });
                 setTransaction(response.data);
             } catch (err) {
                 setError("Failed to load transaction history.");
