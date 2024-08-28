@@ -21,7 +21,7 @@ function Login() {
 
     const fetchUserDetail = async (email) => {
         try {
-            const response = await axios.post("http://localhost:5000/api/auth/userdetail", { email });
+            const response = await axios.post("https://safe-hold-server.vercel.app/api/auth/userdetail", { email });
             return response.data;
         } catch (err) {
             console.log(err);
@@ -42,7 +42,7 @@ function Login() {
         const password = e.target.elements.password.value;
 
         try {
-            const response = await axios.post("http://localhost:5000/api/auth/login", { email, password });
+            const response = await axios.post("https://safe-hold-server.vercel.app/api/auth/login", { email, password });
 
             if (response.data.message === "Login successful") {
                 const user = await fetchUserDetail(email);
