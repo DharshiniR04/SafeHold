@@ -40,7 +40,7 @@ const getTransaction=async(req,res)=>{
     const {email,to}=req.body;
 
     try{
-        const user=await Transaction.find({$or:[{email:email},{to:to}]}).sort({date:1});
+        const user=await Transaction.find({$or:[{email:email},{to:to}]}).sort({date:-1});
 
         res.json(user);
     }
